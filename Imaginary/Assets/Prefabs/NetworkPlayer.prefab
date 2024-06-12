@@ -1,0 +1,132 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &73038282713097663
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 764837064764039398}
+  - component: {fileID: 1051297534434499193}
+  - component: {fileID: 9093332463441172866}
+  - component: {fileID: 8216374123244861218}
+  m_Layer: 0
+  m_Name: NetworkPlayer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &764837064764039398
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 73038282713097663}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 490.39133, y: 335.092, z: -4.491684}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1051297534434499193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 73038282713097663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b91ecbcc199f4492b9a91e820070131, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clientStarted: 0
+  sceneId: 0
+  _assetId: 781714624
+  serverOnly: 0
+  visible: 0
+  hasSpawned: 0
+--- !u!114 &9093332463441172866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 73038282713097663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a553cb17010b2403e8523b558bffbc14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncDirection: 1
+  syncMode: 0
+  syncInterval: 0
+  target: {fileID: 764837064764039398}
+  syncPosition: 1
+  syncRotation: 1
+  syncScale: 0
+  interpolatePosition: 1
+  interpolateRotation: 1
+  interpolateScale: 1
+  coordinateSpace: 0
+  sendIntervalMultiplier: 1
+  timelineOffset: 0
+  showGizmos: 0
+  showOverlay: 0
+  overlayColor: {r: 0, g: 0, b: 0, a: 0.5}
+  onlySyncOnChange: 1
+  compressRotation: 1
+  bufferResetMultiplier: 3
+  positionSensitivity: 0.01
+  rotationSensitivity: 0.01
+  scaleSensitivity: 0.01
+--- !u!114 &8216374123244861218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 73038282713097663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa997dadb039cc64d811e89337315552, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncDirection: 0
+  syncMode: 0
+  syncInterval: 0
+  CardBack: {fileID: 3390358802443161753, guid: b3a2ef1042640594dbf003a41aabeefa, type: 3}
+  Panel_Drop_Zone: {fileID: 5077632799465797093, guid: 695f7c3f8852eae41a5c71962393fb15, type: 3}
+  Panel_Hands: {fileID: 4225410162695289794, guid: a71924e3943931d4fb556316d263000f, type: 3}
+  Panel_Enemy1: {fileID: 8029349108994875172, guid: 3b8cc4ac21d729441b91cbdcf90202bd, type: 3}
+  Panel_Enemy2: {fileID: 2153701791152384444, guid: d5e782e699404eb4fa0b7d299980b630, type: 3}
+  Panel_Enemy3: {fileID: 4943658705564470132, guid: cda1e6ccc04438343ba4195a99f2ef7a, type: 3}
+  NetworkGameManager: {fileID: 9202138532717016705, guid: bd5209fa52741ff47b6dfc9d28e4cff4, type: 3}
+  Panel_Name_Blue: {fileID: 1965871075122242015, guid: cb54822449031e14883ef6c99c671139, type: 3}
+  Panel_Name_Green: {fileID: 1965871075122242015, guid: a34202b31fdf6c24babbbdc9ac62ec10, type: 3}
+  Panel_Name_Purple: {fileID: 1965871075122242015, guid: 2e64cfe2e24b720458a462886203b864, type: 3}
+  Panel_Name_Red: {fileID: 1965871075122242015, guid: 607a17bc4d633c645a2ea0c5ceab4ec6, type: 3}
+  Panel_Name_Yellow: {fileID: 1965871075122242015, guid: 02470b523d8ff674d86075cf82080ef6, type: 3}
+  Panel_Association: {fileID: 7680900791710549091, guid: 20816bf939202df458cff006cc602a32, type: 3}
+  username: 
+  points: 0
+  pointsOnThisCourse: 0
+  readyToContinue: 0
+  enemy1Info:
+    player: {fileID: 0}
+  enemy2Info:
+    player: {fileID: 0}
+  enemy3Info:
+    player: {fileID: 0}
+  hasEnemies: 0
+  Turn: 0
+  Voted: 0
+  CanChooseCard: 0
+  LocalID: 0
+  networkGameManager: {fileID: 0}
