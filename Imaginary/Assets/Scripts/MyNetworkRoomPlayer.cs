@@ -94,18 +94,18 @@ public class MyNetworkRoomPlayer : NetworkRoomPlayer
     public void DrawReadyState(List<bool> readyStatuses, int index)
     {
         //берем второго Child от Panel_Player, а именно - панель для статуса готовности игрока
-        GameObject text_ready_player = GameObject.Find($"Panel_Player{index + 1}").transform.GetChild(1).gameObject;
+        GameObject panel_ReadyStatus = GameObject.Find($"Panel_Player{index + 1}").transform.GetChild(1).gameObject;
 
-        //проверяем статус готовности игрока по соответствующему индексу в списке и задаем цвет и текст статусу
+        //проверяем статус готовности игрока по соответствующему индексу в списке и отображаем статус рядом с именем
         if (readyStatuses[index])
         {
-            text_ready_player.GetComponent<TextMeshProUGUI>().color = new Color(15, 98, 230, 255);
-            text_ready_player.GetComponent<TextMeshProUGUI>().text = $"<color=green>Ready</color>";
+            panel_ReadyStatus.transform.GetChild(1).GetComponent<Image>().enabled = true;
+            panel_ReadyStatus.transform.GetChild(0).GetComponent<Image>().enabled = false;
         }
         else
         {
-            text_ready_player.GetComponent<TextMeshProUGUI>().color = new Color(15, 98, 230, 255);
-            text_ready_player.GetComponent<TextMeshProUGUI>().text = $"<color=red>Not ready</color>";
+            panel_ReadyStatus.transform.GetChild(1).GetComponent<Image>().enabled = false;
+            panel_ReadyStatus.transform.GetChild(0).GetComponent<Image>().enabled = true;
         }
     }
 }
