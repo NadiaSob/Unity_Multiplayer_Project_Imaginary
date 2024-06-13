@@ -26,6 +26,9 @@ Limb
 AdvancedRuleOverrideTile
 UnityEngine
 RuleOverrideTile
+RegisterGenericJobTypeAttribute
+Unity
+Entities
 SVGImage
 
 ObstacleAvoidanceType

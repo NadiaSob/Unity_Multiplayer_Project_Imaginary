@@ -1,3 +1,6 @@
+RegisterGenericJobTypeAttribute
+Unity
+Entities
 ObstacleAvoidanceType
 UnityEngine
 NavMeshAgent
