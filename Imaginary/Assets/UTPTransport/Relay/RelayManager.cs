@@ -194,11 +194,11 @@ namespace Utp
 		
 		void OnGUI()
 		{
-			GUILayout.BeginArea(new Rect(10, 40, 100, 9999));
+			/*GUILayout.BeginArea(new Rect(10, 40, 100, 9999));
 			
 			GUILayout.TextArea(JoinCode);
 			
-			GUILayout.EndArea();
+			GUILayout.EndArea();*/
 		}
 	}
 }

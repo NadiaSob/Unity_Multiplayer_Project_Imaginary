@@ -3,8 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
 using TMPro;
+using Unity.Netcode;
 using UnityEngine;
 using UnityEngine.UI;
+using Utp;
 
 public class MyNetworkRoomPlayer : NetworkRoomPlayer
 {
@@ -12,7 +14,10 @@ public class MyNetworkRoomPlayer : NetworkRoomPlayer
     public GameObject NamesManager;
     public GameObject Button_Ready;
     public NamesManager namesManager;
+    public GameObject Panel_JoinCode;
 
+    [SerializeField] private Mirror.NetworkManager networkManager = null;
+    private RelayManager _relayManager;
     private NetworkRoomManager room;
     private NetworkRoomManager Room
     {
@@ -22,10 +27,30 @@ public class MyNetworkRoomPlayer : NetworkRoomPlayer
         }
     }
 
+    public void Update()
+    {
+        if (Panel_JoinCode)
+        {
+            Panel_JoinCode.transform.GetChild(1).transform.GetChild(0).gameObject.GetComponent<TextMeshProUGUI>().text = _relayManager.JoinCode;
+        }
+    }
+
     public override void OnStartServer()
     {
         NamesManager = GameObject.Find("NamesManager");
         namesManager = NamesManager.GetComponent<NamesManager>();
+
+        Panel_JoinCode = GameObject.Find("Panel_JoinCode");
+        Panel_JoinCode.GetComponent<Image>().enabled = true;
+        Panel_JoinCode.transform.GetChild(0).gameObject.SetActive(true);
+        Panel_JoinCode.transform.GetChild(1).gameObject.SetActive(true);
+        Panel_JoinCode.transform.GetChild(2).gameObject.SetActive(true);
+
+        networkManager = GameObject.Find("NetworkRoomManager").GetComponent<NetworkRoomManager>();
+        _relayManager = networkManager.GetComponent<RelayManager>();
+
+        Panel_JoinCode.transform.GetChild(1).transform.GetChild(0).gameObject.GetComponent<TextMeshProUGUI>().text = _relayManager.JoinCode;
+
 
         //DontDestroyOnLoad(NamesManager);
     }
@@ -68,7 +93,7 @@ public class MyNetworkRoomPlayer : NetworkRoomPlayer
         ShowRoomGUI(namesManager.names, namesManager.readyStatuses);
     }
 
-    [ClientRpc]
+    [Mirror.ClientRpc]
     public void ShowRoomGUI(List<string> names, List<bool> readyStatuses)
     {
         //проходимся циклом столько раз, сколько игроков подключено к лобби. Для каждого игрока (используя соответствующий ему индекс) печатаем имя и статус готовности

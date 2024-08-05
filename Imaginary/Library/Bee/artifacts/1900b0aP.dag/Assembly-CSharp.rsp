@@ -357,6 +357,7 @@
 "Assets/Scripts/ButtonRevealCard.cs"
 "Assets/Scripts/CardFlipper.cs"
 "Assets/Scripts/Connection.cs"
+"Assets/Scripts/CopyJoinCode.cs"
 "Assets/Scripts/DealCardsButton.cs"
 "Assets/Scripts/delete/MainMenu.cs"
 "Assets/Scripts/Lobby.cs"

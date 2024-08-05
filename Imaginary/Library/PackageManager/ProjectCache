@@ -186,9 +186,11 @@ m_ResolvedPackages:
     - 2.1.0
     - 2.2.0
     - 2.3.1
+    - 2.4.3
     compatible:
     - 2.2.0
     - 2.3.1
+    - 2.4.3
     recommended: 2.2.0
     deprecated: []
   dependencies: []
@@ -418,10 +420,12 @@ m_ResolvedPackages:
     - 3.0.26
     - 3.0.27
     - 3.0.28
+    - 3.0.31
     compatible:
     - 3.0.27
     - 3.0.28
-    recommended: 3.0.28
+    - 3.0.31
+    recommended: 3.0.31
     deprecated: []
   dependencies:
   - name: com.unity.ext.nunit
@@ -811,6 +815,8 @@ m_ResolvedPackages:
     - 2.0.0-exp.2
     - 2.0.0-exp.4
     - 2.0.0-exp.5
+    - 2.0.0-pre.1
+    - 2.0.0-pre.2
     compatible:
     - 1.7.1
     - 1.8.0
@@ -4020,12 +4026,14 @@ m_ResolvedPackages:
     - 1.12.2
     - 1.12.4
     - 1.12.5
+    - 1.13.0
     compatible:
     - 1.12.0
     - 1.12.1
     - 1.12.2
     - 1.12.4
     - 1.12.5
+    - 1.13.0
     recommended: 1.12.5
     deprecated: []
   dependencies:
@@ -4116,6 +4124,7 @@ m_ResolvedPackages:
     - 3.2.0
     - 3.3.0
     - 3.3.1
+    - 3.3.3
     compatible:
     - 2.7.2
     - 2.7.4
@@ -4124,6 +4133,7 @@ m_ResolvedPackages:
     - 3.2.0
     - 3.3.0
     - 3.3.1
+    - 3.3.3
     recommended: 2.7.4
     deprecated: []
   dependencies:
@@ -4351,6 +4361,7 @@ m_ResolvedPackages:
     - 2.0.2
     - 2.1.0
     - 2.2.1
+    - 2.3.0
     compatible:
     - 1.4.1
     - 2.0.0-exp.6
@@ -4366,6 +4377,7 @@ m_ResolvedPackages:
     - 2.0.2
     - 2.1.0
     - 2.2.1
+    - 2.3.0
     recommended: 1.4.1
     deprecated: []
   dependencies:
@@ -4574,6 +4586,7 @@ m_ResolvedPackages:
     - 2.4.0
     - 2.4.1
     - 2.4.2
+    - 2.5.0-exp.1
     compatible:
     - 1.2.4
     - 1.3.1
@@ -4596,6 +4609,7 @@ m_ResolvedPackages:
     - 2.4.0
     - 2.4.1
     - 2.4.2
+    - 2.5.0-exp.1
     recommended: 1.2.4
     deprecated: []
   dependencies:
@@ -5753,13 +5767,15 @@ m_ResolvedPackages:
     - 1.8.13
     - 1.8.14
     - 1.8.15
+    - 1.8.16
     compatible:
     - 1.8.11
     - 1.8.12
     - 1.8.13
     - 1.8.14
     - 1.8.15
-    recommended: 1.8.15
+    - 1.8.16
+    recommended: 1.8.16
     deprecated: []
   dependencies:
   - name: com.unity.mathematics

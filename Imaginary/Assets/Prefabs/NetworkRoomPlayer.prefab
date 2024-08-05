@@ -107,3 +107,6 @@ MonoBehaviour:
   Panel_Player: {fileID: 6415975443864835973, guid: 49ba70db7b518b149a96a7ff0291d936, type: 3}
   NamesManager: {fileID: 0}
   Button_Ready: {fileID: 0}
+  namesManager: {fileID: 0}
+  Panel_JoinCode: {fileID: 0}
+  networkManager: {fileID: 1616682350506994716, guid: c715d723f17fe4949a4e46a8e9e73219, type: 3}
